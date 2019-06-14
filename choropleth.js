@@ -136,11 +136,11 @@ case "Waller County":
 
 //Killeen-Temple
 case "Bell County":
-  return "lightblue";
+  return "darkred";
 case "Coryell County":
-  return "lightblue";
+  return "darkred";
 case "Lampasas County":
-  return "lightblue";
+  return "darkred";
 
 //Laredo
 case "Webb County":
@@ -572,7 +572,7 @@ case "Kleberg County":
   return "lightgreen";
 case "Lavaca County":
   return "lightgreen";
-case "Live Oaks County":
+case "Live Oak County":
   return "lightgreen";
 case "Matagorda County":
   return "lightgreen";
