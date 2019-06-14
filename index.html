@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title class = "featurette-heading">Texas Labor Data</title>
+  <title class="featurette-heading">Texas Labor Data</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -16,70 +16,64 @@
     <div class="row">
       <div class="col-md-12 featurette-heading">
         <h1>Texas Labor Data</h1>
-        <p class= 'lead'>We will use Web Scraping to pull data from BLS on employment by sector 
-            in each of Texas’ 25 metropolitan areas as identified by the BLS. The data will
-            be stored on either an SQL or NoSQL database, and analyzed using Python, including the Pandas library.</p>
+        <p class='lead'>We will use Web Scraping to pull data from BLS on employment by sector
+          in each of Texas’ 25 metropolitan areas as identified by the BLS. The data will
+          be stored on either an SQL or NoSQL database, and analyzed using Python, including the Pandas library.</p>
       </div>
 
       <div class="row">
         <div class="col-lg-3">
-          <img class="rounded-circle" src="Houston-Skyline.jpg" alt="Generic placeholder image" width="140" height="140">
+          <img class="rounded-circle" src="Houston-Skyline.jpg" alt="Generic placeholder image" width="140"
+            height="140">
           <h2>Houston</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+            vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+            magna.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
         </div><!-- /.col-lg-3 -->
         <div class="col-lg-3">
-          <img class="rounded-circle" src="San Antonio -Skyline.jpg" alt="Generic placeholder image" width="140" height="140">
+          <img class="rounded-circle" src="San Antonio -Skyline.jpg" alt="Generic placeholder image" width="140"
+            height="140">
           <h2>San Antonio</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+            mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            condimentum nibh.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
         </div><!-- /.col-lg-3 -->
         <div class="col-lg-3">
           <img class="rounded-circle" src="Austin-Skyline.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Austin</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
+            felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+            massa justo sit amet risus.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
         </div><!-- /.col-lg-3 -->
         <div class="col-lg-3">
           <img class="rounded-circle" src="Dallas-Skyline.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Dallas</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
+            felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+            massa justo sit amet risus.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
         </div><!-- /.col-lg-3 -->
       </div>
 
-    </div>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="well">
-          <h5>SELECT Sample:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+      <div class="row featurette">
+        <div class="col-md-5">
+          <h2 class="featurette-heading">Labor Color Map </h2>
+          <p class="lead">The color based map represents the 25 metropolitan regions within the state of Texas</p>
         </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Texas Labor Data</h3>
-          </div>
-          <div id="sample-metadata" class="panel-body"></div>
-        </div>
+        <div class= "col-md-7" id="map"></div>
+        <script type="text/javascript" src="static/js/config.js"></script>
+        <script type="text/javascript" src="static/js/logic.js"></script>
       </div>
-      <div class="col-md-5">
-        <div id="pie"></div>
-      </div>
-      <div class="col-md-5">
-        <div id="gauge"></div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <div id="bubble"></div>
-    </div>
-  </div>
 
-  <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+
+      <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 
 
 </body>
