@@ -174,7 +174,7 @@ case "Midland County":
 
 //Odessa
 case "Ector County":
-  return "royalblue";
+  return "yellow";
 
 //San Angelo
 case "Irion County":
