@@ -144,7 +144,7 @@ case "Lampasas County":
 
 //Laredo
 case "Webb County":
-  return "darkgrey";
+  return "red";
 
 //Longview
 case "Gregg County":
@@ -525,69 +525,69 @@ case "Washington County":
 
 //Border Nonmetropolitan
 case "Dimmit County":
-  return "lightblue";
+  return "darkgreen";
 case "Edwards County":
-  return "lightblue";
+  return "darkgreen";
 case "Kinney County":
-  return "lightblue";
+  return "darkgreen";
 case "La Salle County":
-  return "lightblue";
+  return "darkgreen";
 case "Maverick County":
-  return "lightblue";
+  return "darkgreen";
 case "Real County":
-  return "lightblue";
+  return "darkgreen";
 case "Uvalde County":
-  return "lightblue";
+  return "darkgreen";
 case "Val Verde County":
-  return "lightblue";
+  return "darkgreen";
 case "Zavala County":
-  return "lightblue";
+  return "darkgreen";
 
 //Cpastal Plains Nonmetropolitan
 case "Bee County":
-  return "lightgreen";
+  return "blue";
 case "Brooks County":
-  return "lightgreen";
+  return "blue";
 case "Calhoun County":
-  return "lightgreen";
+  return "blue";
 case "Colorado County":
-  return "lightgreen";
+  return "blue";
 case "DeWitt County":
-  return "lightgreen";
+  return "blue";
 case "Duval County":
-  return "lightgreen";
+  return "blue";
 case "Gonzales County":
-  return "lightgreen";
+  return "blue";
 case "Jackson County":
-  return "lightgreen";
+  return "blue";
 case "Jim Hogg County":
-  return "lightgreen";
+  return "blue";
 case "Jim Wells County":
-  return "lightgreen";
+  return "blue";
 case "Karnes County":
-  return "lightgreen";
+  return "blue";
 case "Kenedy County":
-  return "lightgreen";
+  return "blue";
 case "Kleberg County":
-  return "lightgreen";
+  return "blue";
 case "Lavaca County":
-  return "lightgreen";
+  return "blue";
 case "Live Oak County":
-  return "lightgreen";
+  return "blue";
 case "Matagorda County":
-  return "lightgreen";
+  return "blue";
 case "McMullen County":
-  return "lightgreen";
+  return "blue";
 case "Refugio County":
-  return "lightgreen";
+  return "blue";
 case "Starr County":
-  return "lightgreen";
+  return "blue";
 case "Wharton County":
-  return "lightgreen";
+  return "blue";
 case "Willacy County":
-  return "lightgreen";
+  return "blue";
 case "Zapata County":
-  return "lightgreen";
+  return "blue";
 
   default:
     return "black";
