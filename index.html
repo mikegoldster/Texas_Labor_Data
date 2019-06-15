@@ -8,6 +8,9 @@
   <title class="featurette-heading">Texas Labor Data</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
+   <!-- Leaflet-Choropleth JavaScript -->
+   <script type="text/javascript" src="choropleth.js"></script>
+   
 </head>
 
 <body>
@@ -64,8 +67,8 @@
           <p class="lead">The color based map represents the 25 metropolitan regions within the state of Texas</p>
         </div>
         <div class= "col-md-7" id="map"></div>
-        <script type="text/javascript" src="static/js/config.js"></script>
-        <script type="text/javascript" src="static/js/logic.js"></script>
+        <script type="text/javascript" src="choropleth.js"></script>
+        <script type="text/javascript" src="choropleth.js"></script>
       </div>
 
 
@@ -73,8 +76,7 @@
       <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
       <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-      <script src="{{ url_for('static', filename='js/app.js') }}"></script>
-
+      <script src="choropleth.js"></script>
 
 </body>
 
