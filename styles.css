@@ -35,5 +35,10 @@ body {
 body,
 html {
   height: 400px;
+}
 
+#map2,
+body,
+html {
+  height: 400px;
 }
