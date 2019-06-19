@@ -9,16 +9,19 @@ img {
 
 /*  TEXT STYLES */
 .lead {
-    font-size: 2.25rem;
+    font-size: 2.15rem;
     font-weight: 300;
     text-align: center;
 }
+
 
 body {
     margin: 0;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
     "Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
 }
+
 
 .featurette-heading {
     font-weight: 300;
@@ -26,4 +29,16 @@ body {
     letter-spacing: -.05rem;
     text-align: center;
 
+}
+
+#map,
+body,
+html {
+  height: 400px;
+}
+
+#map2,
+body,
+html {
+  height: 400px;
 }

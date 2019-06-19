@@ -6,8 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title class="featurette-heading">Texas Labor Data</title>
+
+  <!-- Leaflet JS & CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin="" />
+
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+
+  <!-- d3 JavaScript -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
 </head>
 
 <body>
@@ -19,62 +32,107 @@
         <p class='lead'>We will use Web Scraping to pull data from BLS on employment by sector
           in each of Texas’ 25 metropolitan areas as identified by the BLS. The data will
           be stored on either an SQL or MySQL database, and analyzed using Python, including the Pandas library.</p>
+        <br>
+        <br>
+        <h2>Major Cities Job Markets</h2>
+        <p class='lead'>Different job categories have led in different regions of our diverse state:
+          Houston’s job growth driven most by mining and manufacturing;
+          San Antonio’s by mining and construction;
+          Austin’s by financial services and manufacturing;
+          and Dallas-Fort Worth’s by mining, leisure and hospitality, and professional business services</p>
       </div>
 
+      <!-- Section for Major cities description -->
       <div class="row">
         <div class="col-lg-3">
           <img class="rounded-circle" src="Houston-Skyline.jpg" alt="Generic placeholder image" width="140"
             height="140">
           <h2>Houston</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
-            vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
-            magna.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          <p>Job growth for Houston has increased by 2.8%; adding more than
+            86,200 jobs to from last year. Engineering and service related jobs
+            increased by 9.5% and business service related jobs increased by 4.6%
+            over the past year. However, the most significant growth has been within
+            the manufacturing industry. Manufacturing job growth contributed 14,900
+            jobs within the past year; making this the 21st consecutive month for annual
+            job growth.
+          </p>
         </div><!-- /.col-lg-3 -->
+
+
         <div class="col-lg-3">
           <img class="rounded-circle" src="San Antonio -Skyline.jpg" alt="Generic placeholder image" width="140"
             height="140">
           <h2>San Antonio</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
-            mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-            condimentum nibh.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          <p>Job growth for San Antonio has dropped to 1.4% from last year, in comparison to 2.0% from
+            the previous year. However, San Antonio is aiming on becoming the 6th largest city by 2021.
+            There was an increase in construction industry by 5.1%; making it the greatest increase in
+            job growth.
+
+          </p>
         </div><!-- /.col-lg-3 -->
+
+
         <div class="col-lg-3">
           <img class="rounded-circle" src="Austin-Skyline.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Austin</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
-            felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-            massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          <p>Job growth for Austin has increased by 2.1%; adding more than
+            22,700 jobs to from last year. Based on last years' job growth, Austin
+            has became the 16th fastest growing major metropolitan city. Wholesale trade
+            grew by 8.2% making it the fastest growing industry. However, professional
+            and business services added the most 6,000 jobs sparking the greatest increase in job growth.</p>
         </div><!-- /.col-lg-3 -->
+
+
         <div class="col-lg-3">
           <img class="rounded-circle" src="Dallas-Skyline.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Dallas</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
-            felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-            massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          <p>Job growth for Dallas has increased by 3.3%; adding more than
+            84,900 jobs to from last year. Professional and business service
+            related job grew by 3.8% over the past year. The industry with the
+            greatest increase in job growth was lesiure and hospitality; which added
+            18,800 jobs.</p>
         </div><!-- /.col-lg-3 -->
       </div>
 
+      <!-- Section for Leaflet maps and d3 maps -->
       <div class="row featurette">
         <div class="col-md-5">
+          <!-- map explanation -->
           <h2 class="featurette-heading">Labor Color Map </h2>
-          <p class="lead">The color based map represents the 25 metropolitan regions within the state of Texas</p>
+          <p class="lead">The color based map represents the 25 metropolitan
+            regions within the state of Texas. In addition, there are 6 rural
+            regions represented in the color map. Each of the regions are represented
+            by different colors. All 31 regions are represented within the 3 year
+            labor statistics retrived from US Bureau of Labor Statistics for the state
+            of Texas</p>
         </div>
-        <div class= "col-md-7" id="map"></div>
-        <script type="text/javascript" src="static/js/config.js"></script>
-        <script type="text/javascript" src="static/js/logic.js"></script>
+        <!-- leaflet map -->
+        <div class="col-md-7" id="map"></div>
+        <script type="text/javascript" src="config.js"></script>
+        <script type="text/javascript" src="logic.js"></script>
       </div>
 
+       <!-- Section for Leaflet maps and d3 maps -->
+       <div class="row featurette">
+          <!-- leaflet map -->
+        <div class="col-md-7" id="map2"></div>
+        <script type="text/javascript" src="config_Proj2.js"></script>
+        <script type="text/javascript" src="logic_Proj2.js"></script>
+        <!-- map explanation -->
+        <div class="col-md-5">
+          <h2 class="featurette-heading">Labor Statistics Map </h2>
+          <p class="lead">The labor statistics map illustrates the prominent 
+            occupations within the 31 regions within in Texas. 
+          </p>
+        </div>
+       
+    </div>
 
 
-      <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-      <script src="{{ url_for('static', filename='js/app.js') }}"></script>
-
+    <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- <script src="choropleth.js"></script> -->
 
 </body>
 

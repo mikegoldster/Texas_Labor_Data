@@ -20,17 +20,17 @@ function chooseColor(COUNTY) {
 
 //Abilene
 case "Callahan County":
-  return "pink";
+  return "red";
 case "Jones County":
-  return "pink";  
+  return "red";
 case "Taylor County":
-  return "pink";
+  return "red";
 
 //Amarillo
 case "Armstrong County":
   return "lightgreen";
 case "Carson County":
-  return "lightgreen";  
+  return "lightgreen";
 case "Oldham County":
   return "lightgreen";
 case "Potter County":
@@ -42,7 +42,7 @@ case "Randall County":
   case "Bastrop County":
     return "chartreuse";
   case "Caldwell County":
-    return "chartreuse";  
+    return "chartreuse";
   case "Hays County":
     return "chartreuse";
   case "Travis County":
@@ -54,7 +54,7 @@ case "Randall County":
 case "Hardin County":
   return "darkblue";
 case "Jefferson County":
-  return "darkblue";  
+  return "darkblue";
 case "Newton County":
   return "darkblue";
 case "Orange County":
@@ -66,11 +66,11 @@ case "Cameron County":
 
 //College Station
 case "Brazos County":
-  return "silver";
+  return "orange";
 case "Burleson County":
-  return "silver";
+  return "orange";
 case "Robertson County":
-  return "silver";
+  return "orange";
 
 //Corpus Christi
 case "Aransas County":
@@ -144,7 +144,7 @@ case "Lampasas County":
 
 //Laredo
 case "Webb County":
-  return "darkgrey";
+  return "red";
 
 //Longview
 case "Gregg County":
@@ -156,11 +156,11 @@ case "Upshur County":
 
 //Lubbock
 case "Crosby County":
-  return "hotpink";
+  return "darkgreen";
 case "Lubbock County":
-  return "hotpink";
+  return "darkgreen";
 case "Lynn County":
-  return "hotpink";
+  return "darkgreen";
 
 //McAllen
 case "Hidalgo County":
@@ -174,19 +174,19 @@ case "Midland County":
 
 //Odessa
 case "Ector County":
-  return "royalblue";
+  return "yellow";
 
 //San Angelo
 case "Irion County":
-    return "tan";
+    return "blue";
   case "Tom Green County":
-    return "tan"; 
+    return "blue";
 
 //San Antonio
 case "Atascosa County":
   return "yellow";
 case "Bandera County":
-  return "yellow";  
+  return "yellow";
 case "Bexar County":
   return "yellow";
 case "Comal County":
@@ -210,7 +210,7 @@ case "Bowie County":
 
 //Tyler
 case "Smith County":
-  return "white";
+  return "brown";
 
 //Victoria
 case "Goliad County":
@@ -235,141 +235,141 @@ case "Wichita County":
 
 //West Texas Nonmetropolitan
 case "Andrews County":
-  return "white";
+  return "hotpink";
 case "Bailey County":
-  return "white";
+  return "hotpink";
 case "Baylor County":
-  return "white";
+  return "hotpink";
 case "Borden County":
-  return "white";
+  return "hotpink";
 case "Brewster County":
-  return "white";
+  return "hotpink";
 case "Briscoe County":
-  return "white";
+  return "hotpink";
 case "Castro County":
-  return "white";
+  return "hotpink";
 case "Childress County":
-  return "white";
+  return "hotpink";
 case "Cochran County":
-  return "white";
+  return "hotpink";
 case "Collingsworth County":
-  return "white";
+  return "hotpink";
 case "Cottle County":
-  return "white";
+  return "hotpink";
 case "Crane County":
-  return "white";
+  return "hotpink";
 case "Crockett County":
-  return "white";
+  return "hotpink";
 case "Culberson County":
-  return "white";
+  return "hotpink";
 case "Dallam County":
-  return "white";
+  return "hotpink";
 case "Dawson County":
-  return "white";
+  return "hotpink";
 case "Deaf Smith County":
-  return "white";
+  return "hotpink";
 case "Dickens County":
-  return "white";
+  return "hotpink";
 case "Donley County":
-  return "white";
+  return "hotpink";
 case "Fisher County":
-  return "white";
+  return "hotpink";
 case "Floyd County":
-  return "white";
+  return "hotpink";
 case "Foard County":
-  return "white";
+  return "hotpink";
 case "Gaines County":
-  return "white";
+  return "hotpink";
 case "Garza County":
-  return "white";
+  return "hotpink";
 case "Glasscock County":
-  return "white";
+  return "hotpink";
 case "Gray County":
-  return "white";
+  return "hotpink";
 case "Hale County":
-  return "white";
+  return "hotpink";
 case "Hall County":
-  return "white";
+  return "hotpink";
 case "Hansford County":
-  return "white";
+  return "hotpink";
 case "Hardeman County":
-  return "white";
+  return "hotpink";
 case "Hartley County":
-  return "white";
+  return "hotpink";
 case "Haskell County":
-  return "white";
+  return "hotpink";
 case "Hemphill County":
-  return "white";
+  return "hotpink";
 case "Hockley County":
-  return "white";
+  return "hotpink";
 case "Howard County":
-  return "white";
+  return "hotpink";
 case "Hutchinson County":
-  return "white";
+  return "hotpink";
 case "Jeff Davis County":
-  return "white";
+  return "hotpink";
 case "Kent County":
-  return "white";
+  return "hotpink";
 case "King County":
-  return "white";
+  return "hotpink";
 case "Knox County":
-  return "white";
+  return "hotpink";
 case "Lamb County":
-  return "white";
+  return "hotpink";
 case "Lipscomb County":
-  return "white";
+  return "hotpink";
 case "Loving County":
-  return "white";
+  return "hotpink";
 case "Mitchell County":
-  return "white";
+  return "hotpink";
 case "Moore County":
-  return "white";
+  return "hotpink";
 case "Motley County":
-  return "white";
+  return "hotpink";
 case "Nolan County":
-  return "white";
+  return "hotpink";
 case "Ochiltree County":
-  return "white";
+  return "hotpink";
 case "Parmer County":
-  return "white";
+  return "hotpink";
 case "Pecos County":
-  return "white";
+  return "hotpink";
 case "Presidio County":
-  return "white";
+  return "hotpink";
 case "Reagan County":
-  return "white";
+  return "hotpink";
 case "Reeves County":
-  return "white";
+  return "hotpink";
 case "Roberts County":
-  return "white";
+  return "hotpink";
 case "Scurry County":
-  return "white";
+  return "hotpink";
 case "Shackelford County":
-  return "white";
+  return "hotpink";
 case "Sherman County":
-  return "white";
+  return "hotpink";
 case "Stonewall County":
-  return "white";
+  return "hotpink";
 case "Swisher County":
-  return "white";
+  return "hotpink";
 case "Terrell County":
-  return "white";
+  return "hotpink";
 case "Terry County":
-  return "white";
+  return "hotpink";
 case "Throckmorton County":
-  return "white";
+  return "hotpink";
 case "Upton County":
-  return "white";
+  return "hotpink";
 case "Ward County":
-  return "white";
+  return "hotpink";
 case "Wheeler County":
-  return "white";
+  return "hotpink";
 case "Wilbarger County":
-  return "white";
+  return "hotpink";
 case "Winkler County":
-  return "white";
+  return "hotpink";
 case "Yoakum County":
-  return "white";
+  return "hotpink";
 
 //North Texas Nonmetropolitan
 case "Anderson County":
@@ -433,27 +433,27 @@ case "Young County":
 
 //Big Thicket NonMetropolitan
 case "Angelina County":
-  return "purple";
+  return "black";
 case "Houston County":
-  return "purple";
+  return "black";
 case "Jasper County":
-  return "purple";
+  return "black";
 case "Nacogdoches County":
-  return "purple";
+  return "black";
 case "Polk County":
-  return "purple";
+  return "black";
 case "Sabine County":
-  return "purple";
+  return "black";
 case "San Augustine County":
-  return "purple";
+  return "black";
 case "San Jacinto County":
-  return "purple";
+  return "black";
 case "Shelby County":
-  return "purple";
+  return "black";
 case "Trinity County":
-  return "purple";
+  return "black";
 case "Tyler County":
-  return "purple";
+  return "black";
 
 //Hill Country NonMetropolitan
 case "Blanco County":
@@ -525,69 +525,69 @@ case "Washington County":
 
 //Border Nonmetropolitan
 case "Dimmit County":
-  return "lightblue";
+  return "darkgreen";
 case "Edwards County":
-  return "lightblue";
+  return "darkgreen";
 case "Kinney County":
-  return "lightblue";
+  return "darkgreen";
 case "La Salle County":
-  return "lightblue";
+  return "darkgreen";
 case "Maverick County":
-  return "lightblue";
+  return "darkgreen";
 case "Real County":
-  return "lightblue";
+  return "darkgreen";
 case "Uvalde County":
-  return "lightblue";
+  return "darkgreen";
 case "Val Verde County":
-  return "lightblue";
+  return "darkgreen";
 case "Zavala County":
-  return "lightblue";
+  return "darkgreen";
 
 //Cpastal Plains Nonmetropolitan
 case "Bee County":
-  return "lightgreen";
+  return "blue";
 case "Brooks County":
-  return "lightgreen";
+  return "blue";
 case "Calhoun County":
-  return "lightgreen";
+  return "blue";
 case "Colorado County":
-  return "lightgreen";
+  return "blue";
 case "DeWitt County":
-  return "lightgreen";
+  return "blue";
 case "Duval County":
-  return "lightgreen";
+  return "blue";
 case "Gonzales County":
-  return "lightgreen";
+  return "blue";
 case "Jackson County":
-  return "lightgreen";
+  return "blue";
 case "Jim Hogg County":
-  return "lightgreen";
+  return "blue";
 case "Jim Wells County":
-  return "lightgreen";
+  return "blue";
 case "Karnes County":
-  return "lightgreen";
+  return "blue";
 case "Kenedy County":
-  return "lightgreen";
+  return "blue";
 case "Kleberg County":
-  return "lightgreen";
+  return "blue";
 case "Lavaca County":
-  return "lightgreen";
+  return "blue";
 case "Live Oak County":
-  return "lightgreen";
+  return "blue";
 case "Matagorda County":
-  return "lightgreen";
+  return "blue";
 case "McMullen County":
-  return "lightgreen";
+  return "blue";
 case "Refugio County":
-  return "lightgreen";
+  return "blue";
 case "Starr County":
-  return "lightgreen";
+  return "blue";
 case "Wharton County":
-  return "lightgreen";
+  return "blue";
 case "Willacy County":
-  return "lightgreen";
+  return "blue";
 case "Zapata County":
-  return "lightgreen";
+  return "blue";
 
   default:
     return "black";
