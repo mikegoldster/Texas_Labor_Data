@@ -1,0 +1,20 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#map,
+body,
+html {
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+#value-name{
+  font-size: 12px;
+  font-weight: bold;
+
+}
