@@ -24,13 +24,14 @@ body {
 
 
 .featurette-heading {
-    font-weight: 300;
+    font-weight: 300, bold;
     line-height: 1;
     letter-spacing: -.05rem;
     text-align: center;
 
 }
 
+/* maps */
 #map,
 body,
 html {
