@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title class="featurette-heading">Texas Labor Data</title>
+
+  <!-- Leaflet JS & CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin="" />
+
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+
+  <!-- d3 JavaScript -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 featurette-heading">
+        <h1>Texas Labor Data</h1>
+        <p class='lead'>This dashboard features visualizations of the last three years of data describing employment by sector
+          in each of Texas’ 25 metropolitan areas as identified by the federal Bureau of Labor Statistics. The data were extracted, 
+          transformed, and loaded using various Python libraries into a MySQL database hosted on a Heroku server.</p>
+        <br>
+        <br>
+        <h2>Major Cities Job Markets</h2>
+        <p class='lead'>Different job categories have led in different regions of our diverse state:
+          Houston’s job growth driven most by mining and manufacturing;
+          San Antonio’s by mining and construction;
+          Austin’s by financial services and manufacturing;
+          and Dallas-Fort Worth’s by mining, leisure and hospitality, and professional business services</p>
+      </div>
+
+      <!-- Section for Major cities description -->
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="rounded-circle" src="../static/images/Houston-Skyline.jpg" alt="Generic placeholder image" width="140"
+            height="140">
+          <h2>Houston</h2>
+          <p>Job growth for Houston has increased by 2.8%; adding more than
+            86,200 jobs to from last year. Engineering and service related jobs
+            increased by 9.5% and business service related jobs increased by 4.6%
+            over the past year. However, the most significant growth has been within
+            the manufacturing industry. Manufacturing job growth contributed 14,900
+            jobs within the past year; making this the 21st consecutive month for annual
+            job growth.
+          </p>
+        </div><!-- /.col-lg-3 -->
+
+
+        <div class="col-lg-3">
+          <img class="rounded-circle" src="../static/images/San Antonio-Skyline.jpg" alt="Generic placeholder image" width="140"
+            height="140">
+          <h2>San Antonio</h2>
+          <p>Job growth for San Antonio has dropped to 1.4% from last year, in comparison to 2.0% from
+            the previous year. However, San Antonio is aiming on becoming the 6th largest city by 2021.
+            There was an increase in construction industry by 5.1%; making it the greatest increase in
+            job growth.
+
+          </p>
+        </div><!-- /.col-lg-3 -->
+
+
+        <div class="col-lg-3">
+          <img class="rounded-circle" src="../static/images/Austin-Skyline.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Austin</h2>
+          <p>Job growth for Austin has increased by 2.1%; adding more than
+            22,700 jobs to from last year. Based on last years' job growth, Austin
+            has became the 16th fastest growing major metropolitan city. Wholesale trade
+            grew by 8.2% making it the fastest growing industry. However, professional
+            and business services added the most 6,000 jobs sparking the greatest increase in job growth.</p>
+        </div><!-- /.col-lg-3 -->
+
+
+        <div class="col-lg-3">
+          <img class="rounded-circle" src="../static/images/Dallas-Skyline.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Dallas</h2>
+          <p>Job growth for Dallas has increased by 3.3%; adding more than
+            84,900 jobs to from last year. Professional and business service
+            related job grew by 3.8% over the past year. The industry with the
+            greatest increase in job growth was lesiure and hospitality; which added
+            18,800 jobs.</p>
+        </div><!-- /.col-lg-3 -->
+      </div>
+<br>
+      <!-- Section for Leaflet maps and d3 maps -->
+      <div class="row featurette">
+        <div class="col-md-5">
+          <!-- map explanation -->
+          <h2 class="featurette-heading">Labor Color Map </h2>
+          <p class="lead">The color based map represents the 25 metropolitan
+            regions within the state of Texas. In addition, there are 6 rural
+            regions represented in the color map. Each of the regions are represented
+            by different colors. All 31 regions are represented within the 3 year
+            labor statistics retrived from US Bureau of Labor Statistics for the state
+            of Texas</p>
+        </div>
+        <!-- leaflet map -->
+        <div class="col-md-7" id="map"></div>
+        <script type="text/javascript" src="../static/js/config.js"></script>
+        <script type="text/javascript" src="../static/js/logic.js"></script>
+      </div>
+      <br>
+       <!-- Section for Leaflet maps and d3 maps -->
+       <div class="row featurette">
+          <!-- leaflet map -->
+        <div class="col-md-7" id="map2"></div>
+        <script type="text/javascript" src="../static/js/config_Proj2.js"></script>
+        <script type="text/javascript" src="../static/js/logic_Proj2.js"></script>
+        <!-- map explanation -->
+        <div class="col-md-5">
+          <h2 class="featurette-heading">Labor Statistics Map </h2>
+          <p class="lead">The labor statistics map illustrates the prominent 
+            occupations within the 31 regions within in Texas. 
+          </p>
+        </div>
+       
+    </div>
+
+
+    <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- <script src="choropleth.js"></script> -->
+
+</body>
+<footer>Dashboard by Avery, Diamond, Mike, and Ruth</footer>
+</html>
