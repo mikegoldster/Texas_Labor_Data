@@ -1,6 +1,5 @@
 # Texas_Labor_Data
-#Rice Bootcamp Project 2 
-#Rice Data Bootcamp Project 2: Texas Workforce Trends
+# Rice Data Bootcamp Project 2: Texas Workforce Trends
 
 Texas continues to be an economic growth driver for the nation, and as of April 2019 had added 294,200 nonfarm payroll employment positions
 over the year before - more than any other state.  Every employment category tracked by the Bureau of Labor Statistics (BLS) saw increases
